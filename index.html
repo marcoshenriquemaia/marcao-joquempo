@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Joquempo</title>
+</head>
+
+<body>
+  <div class="scoreboard-wrapper">
+    <h1 class="winner-text"></h1>
+    <div class="players-score-wrapper">
+      <span class="player-name">Jogador 1</span>
+      <span id="score-player-1" class="player-score">0</span>
+      <span class="small-vs">VS</span>
+      <span id="score-player-2" class="player-score">0</span>
+      <span class="player-name">Jogador 2</span>
+    </div>
+  </div>
+  <section class="battlefield-container">
+    <div class="button-wrapper">
+      <button id="button-stone-player-1" class="default-button">Pedra</button>
+      <button id="button-paper-player-1" class="default-button">Papel</button>
+      <button id="button-scissors-player-1" class="default-button">Tesoura</button>
+    </div>
+    <div class="battlefield">
+      <div id="field-1" class="field"></div>
+      <span class="big-vs">VS</span>
+      <div id="field-2" class="field"></div>
+    </div>
+    <div class="button-wrapper">
+      <button id="button-stone-player-2" class="default-button">Pedra</button>
+      <button id="button-paper-player-2" class="default-button">Papel</button>
+      <button id="button-scissors-player-2" class="default-button">Tesoura</button>
+    </div>
+  </section>
+  <div class="reset-init-wrapper">
+    <button class="default-button start-button">Iniciar</button>
+    <button class="default-button reset-button">Resetar</button>
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>
